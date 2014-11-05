@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script src="js/jquery-1.11.0.js"></script>
+<style type="text/css">
+	
+
+#floating-box{
+right:10px;
+background: #fff;
+position: absolute;
+top:20px;
+box-shadow:0 2px 3px #BBB;
+}
+.fbutton {
+margin:0px auto;
+padding: 5px;
+text-align:center;
+}
+</style>
+<script type='text/javascript'>
+$(document).ready(function() {
+var $sidebar = $(".boxes"),
+$window = $(window),
+offset = $sidebar.offset(),
+topPadding = 160;
+$window.scroll(function() {
+if ($window.scrollTop() > offset.top) {
+$sidebar.stop().animate({
+marginTop: $window.scrollTop() - offset.top + topPadding
+});
+} else {
+$sidebar.stop().animate({
+marginTop: 30
+});
+}
+});
+});
+        </script>
+
+<div style="margin-top: 95.2px;" class="boxes" id="floating-box">
+	<div class="fbutton">
+		<iframe style="width: 69px; height: 62px;" data-twttr-rendered="true" title="Twitter Tweet Button" class="twitter-share-button twitter-tweet-button twitter-share-button twitter-count-vertical" src="http://platform.twitter.com/widgets/tweet_button.d58098f8a7f0ff5a206e7f15442a6b30.es.html#_=1415201808457&amp;count=vertical&amp;id=twitter-widget-0&amp;lang=es&amp;original_referer=http%3A%2F%2Fwww.ayuda-bloggers.info%2F2012%2F03%2Fefecto-de-desenfoque-con-css.html&amp;related=ayudabloggers&amp;size=m&amp;text=Efecto%20de%20desenfoque%20con%20CSS%20%3A%20Ayuda%20Bloggers&amp;url=http%3A%2F%2Fwww.ayuda-bloggers.info%2F2012%2F03%2Fefecto-de-desenfoque-con-css.html&amp;via=ayudabloggers" allowtransparency="true" scrolling="no" id="twitter-widget-0" frameborder="0">	
+		</iframe>
+	</div>
+<div class="fbutton">
+<div fb-iframe-plugin-query="app_id=159862980761189&amp;href=http%3A%2F%2Fwww.ayuda-bloggers.info%2F2012%2F03%2Fefecto-de-desenfoque-con-css.html&amp;layout=box_count&amp;locale=es_LA&amp;sdk=joey&amp;send=false&amp;show_faces=false&amp;width=50" fb-xfbml-state="rendered" class="fb-like fb_iframe_widget" data-layout="box_count" data-send="false" data-show-faces="false" data-width="50"><span style="vertical-align: bottom; width: 73px; height: 61px;"><iframe class=" fb_iframe_widget_lift" src="http://www.facebook.com/plugins/like.php?app_id=159862980761189&amp;channel=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter%2FQjK2hWv6uak.js%3Fversion%3D41%23cb%3Df346333ce84ae%26domain%3Dwww.ayuda-bloggers.info%26origin%3Dhttp%253A%252F%252Fwww.ayuda-bloggers.info%252Ff359a5c84d85b82%26relation%3Dparent.parent&amp;href=http%3A%2F%2Fwww.ayuda-bloggers.info%2F2012%2F03%2Fefecto-de-desenfoque-con-css.html&amp;layout=box_count&amp;locale=es_LA&amp;sdk=joey&amp;send=false&amp;show_faces=false&amp;width=50" style="border: medium none; visibility: visible; width: 76px; height: 61px;" title="fb:like Facebook Social Plugin" scrolling="no" allowtransparency="true" name="f8eac70b9dd75" frameborder="0" height="1000px" width="50px"></iframe></span></div>
+</div>
+<div class="fbutton">
+<div id="___plusone_0" style="text-indent: 0px; margin: 0px; padding: 0px; background: none repeat scroll 0% 0% transparent; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; display: inline-block; width: 50px; height: 60px;"><iframe title="+1" data-gapiattached="true" src="https://apis.google.com/se/0/_/+1/fastbutton?usegapi=1&amp;width=int&amp;size=tall&amp;count=true&amp;anotation=bubble&amp;hl=es&amp;origin=http%3A%2F%2Fwww.ayuda-bloggers.info&amp;url=http%3A%2F%2Fwww.ayuda-bloggers.info%2F2012%2F03%2Fefecto-de-desenfoque-con-css.html&amp;gsrc=3p&amp;ic=1&amp;jsh=m%3B%2F_%2Fscs%2Fapps-static%2F_%2Fjs%2Fk%3Doz.gapi.es.4g1wCvbT6rQ.O%2Fm%3D__features__%2Fam%3DAQ%2Frt%3Dj%2Fd%3D1%2Ft%3Dzcms%2Frs%3DAGLTcCPtj4jTxo9Bilm7WR9cHjaPhAMnrg#_methods=onPlusOne%2C_ready%2C_close%2C_open%2C_resizeMe%2C_renderstart%2Concircled%2Cdrefresh%2Cerefresh%2Conload&amp;id=I0_1415201808515&amp;parent=http%3A%2F%2Fwww.ayuda-bloggers.info&amp;pfname=&amp;rpctoken=19814557" name="I0_1415201808515" id="I0_1415201808515" vspace="0" tabindex="0" style="position: static; top: 0px; width: 50px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 60px;" scrolling="no" marginwidth="0" marginheight="0" hspace="0" frameborder="0" width="100%"></iframe></div>
+</div>
+</div>
+
+</body>
+</html>
